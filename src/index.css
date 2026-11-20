@@ -1,0 +1,130 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+    --bg-primary: #090B10;
+    --bg-card: #11151D;
+    --bg-card-secondary: #181D27;
+    --border-color: #262C37;
+    --accent-primary: #EF233C;
+    --accent-engineering: #1EA7FF;
+    --accent-client: #18D879;
+    --accent-creative: #B66BFF;
+    --accent-personal: #FFB21A;
+    --text-primary: #F5F6F8;
+    --text-secondary: #9DA5B4;
+  }
+
+  /* Themes */
+  [data-theme="midnight"] {
+    --bg-primary: #090B10;
+    --bg-card: #11151D;
+    --bg-card-secondary: #181D27;
+    --border-color: #262C37;
+    --accent-primary: #EF233C;
+    --text-primary: #F5F6F8;
+    --text-secondary: #9299A8;
+  }
+
+  [data-theme="cyber"] {
+    --bg-primary: #050811;
+    --bg-card: #0c1222;
+    --bg-card-secondary: #131c36;
+    --border-color: #1e3a5f;
+    --accent-primary: #00F0FF;
+    --text-primary: #EDF2F7;
+    --text-secondary: #7E97B8;
+  }
+
+  [data-theme="violet"] {
+    --bg-primary: #0A0612;
+    --bg-card: #130E24;
+    --bg-card-secondary: #1D1636;
+    --border-color: #352554;
+    --accent-primary: #B66BFF;
+    --text-primary: #F7F5FC;
+    --text-secondary: #A69ABF;
+  }
+
+  [data-theme="crimson"] {
+    --bg-primary: #0D0507;
+    --bg-card: #1B0C10;
+    --bg-card-secondary: #271218;
+    --border-color: #441A25;
+    --accent-primary: #FF2E4D;
+    --text-primary: #FFF0F2;
+    --text-secondary: #BFA0A7;
+  }
+
+  [data-theme="forest"] {
+    --bg-primary: #060B08;
+    --bg-card: #0D1711;
+    --bg-card-secondary: #15241C;
+    --border-color: #1F3B2C;
+    --accent-primary: #18D879;
+    --text-primary: #F0F7F2;
+    --text-secondary: #95B3A1;
+  }
+
+  [data-theme="light"] {
+    --bg-primary: #F4F6F9;
+    --bg-card: #FFFFFF;
+    --bg-card-secondary: #EBF0F5;
+    --border-color: #D6DFE8;
+    --accent-primary: #D90429;
+    --text-primary: #111827;
+    --text-secondary: #4B5563;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Inter Variable', 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom modern scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262c37;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+/* Code and mono fonts */
+.font-mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.font-heading {
+  font-family: 'Space Grotesk Variable', 'Space Grotesk', 'Inter', sans-serif;
+}
+
+/* Custom Glass & Backdrop effects */
+.glass-panel {
+  background-color: rgba(17, 21, 29, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-panel-light {
+  background-color: rgba(24, 29, 39, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="zh-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF233C"/>
+      <stop offset="100%" stop-color="#99001A"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#EF233C" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#090B10"/>
+  <rect x="14" y="14" width="100" height="100" rx="22" fill="url(#zh-grad)" filter="url(#shadow)"/>
+  <text x="64" y="76" font-family="'Space Grotesk', system-ui, sans-serif" font-weight="900" font-size="44" fill="#FFFFFF" text-anchor="middle" letter-spacing="-1">ZH</text>
+</svg>
